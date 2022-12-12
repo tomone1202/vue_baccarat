@@ -1,0 +1,72 @@
+body{
+  user-select:none; /* standard syntax */
+  -webkit-user-select:none; /* for Chrome、Safari */
+  -moz-user-select:none;  /* for Mozilla、Firefox */
+}
+
+@mixin baseZone {
+  background: #025700;
+  color: white;
+  .baccaratBtn {
+    color: #C8FCC9;
+    font-weight: bold;
+    cursor: pointer;
+    background: #025700;
+    border: white .5px solid;
+
+    &:hover {
+      background: #74A875;
+    }
+
+  }
+}
+
+.stakeZone, .placeZone {
+  @include baseZone
+}
+
+.stakeZone {
+  .baccaratBtn {
+    border-radius: 50%;
+  }
+}
+
+.placeZone {
+  margin-bottom: 10rem;
+}
+
+.selectedChipAmount {
+  background: #74A875 !important;
+}
+
+.placeBet {
+  display: grid;
+  place-items: center;
+  height: 10vh;
+}
+
+@mixin absolutePosition{
+  position: absolute;
+  top:calc(50% - 2rem);
+  left: calc(50% - 2rem);
+}
+
+.chip {
+  @include absolutePosition;
+  color: #C8FCC9;
+  font-weight: bold;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
+  z-index: 20;
+  background: #CC2E2C;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px white solid;
+}
+.betOptionText{
+  @include absolutePosition;
+}

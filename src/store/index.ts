@@ -1,9 +1,15 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
+  state: {
+    chipMount: 10,
+  },
   getters: {},
-  mutations: {},
+  mutations: {
+    setChipMount(state, chipMount) {
+      state.chipMount = chipMount;
+    },
+  },
   actions: {},
   modules: {},
 });
