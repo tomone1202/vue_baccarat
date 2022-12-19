@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex justify-content-center">
-    <Baccarat style="max-width: 600px" />
+  <div class="d-flex justify-content-center" style="min-width: 700px">
+    <Baccarat />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-#app {
-  background: #3e347f;
+body {
+  background: #3e347f !important;
 }
 </style>
