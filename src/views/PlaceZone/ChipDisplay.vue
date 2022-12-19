@@ -1,6 +1,6 @@
 <template>
-  <div style="position: relative">
-    <div class="chipComponentAnimation chip" :style="styleTest">Chip</div>
+  <div class="position-relative">
+    <div class="chip" :style="styleTest">Chip</div>
   </div>
 </template>
 
